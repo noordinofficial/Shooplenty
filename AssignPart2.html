@@ -1,0 +1,143 @@
+<!doctype html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+  <style>
+
+    body{
+    background-color: slateblue;
+
+}
+.main{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    width: 800px;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: white;
+    border: 2px solid rgb(188, 185, 185);
+}
+.container1{
+    width: 400px;
+    margin-right: 20px;
+    background-color: white;
+}
+#p{
+    width: 350px
+}
+#image{
+    margin-top: 50px;
+}
+#mail{
+    width: 350px;
+}
+.container1 h1{
+    color: slateblue;
+    background-color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container2{
+    margin-top: 20px;
+}
+form{
+    margin-right: 50px;
+    width: 50%;
+}
+input[type=text],input[type=email]{
+    width: 350px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: white;
+}
+input[type=text]:focus,input[type=email]:focus{
+    background-color: dimgrey;
+}
+button{
+    background-color: slateblue;
+    width: 100px;
+    height: 30px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-right: 10px;
+    border-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 5px;
+
+}
+button:hover{
+    background-color: darkkhaki;
+}
+textarea{
+    width: 350px;
+    height: 60px;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+a{
+    text-decoration: none;
+    color: rgb(77, 193, 213);
+}
+label{
+    font-family: Arial;
+    font-weight: bold;
+}
+  </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="container1">
+            <div id="h1">
+                <h1>CONTACT US</h1>
+            </div>
+            <div id="p">
+                <p>Or reach out manually to <a href="#">unifresh.net@gmail.com</a></p>
+            </div>
+            <div id="image">
+                <img src="images/downlaod.jpeg" alt="Contact Us">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div id="form">
+                <form action="#">
+                    <div id="mail">
+                        <label for="email">Email address</label><br>
+                        <input type="email" id="email" required="required">
+                        <p style="color: slateblue">We'll never share your email with anyone else.</p>
+                    </div>
+                    <div id="yname">
+                        <label for="name">Your name</label><br>
+                        <input type="text" id="name" required="required">
+                    </div>
+                    <br>
+                    <div id="themessage">
+                        <label for="message">Your message</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <br>
+                    <div id="button">
+                        <button>Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
